@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movies X</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #nav-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 80px;
+    }
+    
+    #nav-bar a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3rem;
+        display: block;
+        color: #333;
+    }
+    
+    #nav-bar>img {
+        width: 10px;
+        height: 10px;
+    }
+    
+    #nav-bar>ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    #nav-bar>ul>li a {
+        padding: 100%;
+        background-color: lightgrey;
+    }
+    
+    #nav-bar>ul>li>a:hover {
+        background: #171;
+        color: #f8f9f9;
+    }
+    
+    #nav-bar .hidden {
+        display: none;
+    }
+    
+    #nav-bar .show {
+        display: block;
+    }
+    
+    .pic {
+        width: 40%;
+        height: 100%;
+        margin-left: 165px;
+        position: absolute;
+        box-shadow: 2px 5px 10px 2px #1717;
+        border-radius: 30px;
+        background: transparent;
+    }
+    
+    .pic>p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    
+    .pic>img {
+        top: 0;
+        padding-left: 0px;
+        width: 100%;
+        height: 70%;
+    }
+    
+    .pic .Ipic>img {
+        width: 18px;
+        align-items: center;
+        margin-left: 10px;
+        height: 18px;
+    }
+    
+    .edu {
+        width: 50%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        color: black;
+        margin-left: 740px;
+        position: absolute;
+        background: transparent;
+    }
+    
+    .edu>p {
+        top: 0;
+        right: 20px;
+        width: 100%;
+        height: 20px;
+        border-top: 2px solid ash;
+        border-bottom: 2px solid green;
+    }
+    
+    .edu span {
+        color: green;
+    }
+    
+    .edu .edu1 {
+        width: 50%;
+        height: 50%;
+    }
+    
+    .edu .edu2 {
+        width: 50%;
+        height: 50%;
+        padding: 40px;
+        position: absolute;
+    }
+    
+    .edu .edu2 span {
+        color: green;
+        font-weight: 400;
+    }
+</style>
+
+<body>
+    <nav id="nav-bar" class="hidden">
+        <ul>
+            <li><a href="profolio.html">About</a></li>
+            <li><a href="profolio1.html">Resume</a></li>
+            <li><a href="profolio21.html">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="pic">
+        <img src="images/ken1.jpg">
+        <p> Friday Kenneth</p>
+        <div class="Ipic">
+            <img src="Images/github.png"><img src="Images/facebook-logo-in-circular-shape.png">
+            <img src="Images/discord.png"><img src="Images/twitter.png" alt="">
+        </div>
+
+        <div class="edu">
+            <p><span>EXPERINCE</span> </p>
+            <div class="edu1">
+                <h3>i am Friday kenneth a web designer from Nigeria,<br> i have rich experience in web site design and building and customization.<br>I love to talk to you about my work.</h3>
+            </div>
+            <div class="edu2">
+                <P><span>EDUCATION</span> ....</P>
+                <h3><span>primay school</span>Life Education</h3>
+                <h3><span>secondary school</span>Oginigba Comprehensive Secondary School</h3>
+                <h3><span>University</span>Akwa Ibom State University</h3>
+            </div>
+        </div>
+        <script>
+            let div = document.getElementById("pic");
+            let Timeout = setInterval(picdiv, 1000);
+
+            function picdiv() {
+                div.style.marginleft = "+10 px";
+            }
+        </script>
+</body>
+
+</html>
